@@ -1,34 +1,39 @@
 package org.example.Airline_Reservation_System;
 
 public class Passenger {
-    private String fullname;
-    private String flightnumber;
+    private String full_name;
+    private String flight_number;
     private String place;
     private String email;
     private int phone_number;
-    private int age;
-    private String gender;
-
-
-    public Passenger(String fullname, String flightnumber, String place, String email, int phone_number, int age, String gender) {
-        this.fullname = fullname;
-        this.place = place;
-        this.email = email;
-        this.phone_number = phone_number;
-        this.age = age;
-        this.gender = gender;
-        this.flightnumber = flightnumber;
+    //сеттеры:
+    public void setFull_name(String full_name) {
+        this.full_name = full_name;
     }
+    public void setFlight_number(String flight_number) {
+        this.flight_number = flight_number;
+    }
+    public void setPlace(String place) {
+        this.place = place;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public void setPhone(int phone_number) {
+        this.phone_number = phone_number;
+    }
+    //геттеры
+    public String getFull_name() {return full_name;}
+    public String getFlight_number() {return flight_number;}
 
     public String toString() {
         return "Passenger information:\n" +
-                "Fullname: " + fullname + "\n" +
-                "Flight number: " + flightnumber + "\n" +
+                "Full name: " + full_name + "\n" +
+                "Flight number: " + flight_number + "\n" +
                 "Place: " + place + "\n" +
                 "Email: " + email + "\n" +
-                "Phone number: " + phone_number + "\n" +
-                "Age: " + age + "\n" +
-                "Gender: " + gender + "\n";
+                "Phone number: " + phone_number + "\n";
     }
+
 
 }
